@@ -1,0 +1,98 @@
+/* Styles for header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styles for navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    /* Position relative for absolute positioning */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Position dropdown below parent */
+    left: 0;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.dropdown li {
+    margin-top: 10px;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styles for main sections */
+main {
+    padding: 20px;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #de5353;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
